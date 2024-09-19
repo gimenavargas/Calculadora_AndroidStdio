@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Display TextView -->
+
+    <!-- Button 7 -->
+
+    <!-- Button 8 -->
+
+    <!-- Button 9 -->
+
+    <!-- Divide Button (/) -->
+
+    <!-- Button 4 -->
+
+    <!-- Button 5 -->
+
+    <!-- Button 6 -->
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:text="5"
+        app:layout_constraintLeft_toRightOf="@id/btn4"
+        app:layout_constraintRight_toLeftOf="@id/btn6"
+        app:layout_constraintTop_toBottomOf="@id/btn8" />
+
+    <Button
+        android:id="@+id/btnEquals"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="20dp"
+        android:text="="
+        app:layout_constraintLeft_toRightOf="@id/btnClear"
+        app:layout_constraintRight_toLeftOf="@id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@id/btn3" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:text="9"
+        app:layout_constraintLeft_toRightOf="@id/btn8"
+        app:layout_constraintRight_toLeftOf="@id/btnDivide"
+        app:layout_constraintTop_toBottomOf="@id/tvDisplay" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:text="2"
+        app:layout_constraintLeft_toRightOf="@id/btn1"
+        app:layout_constraintRight_toLeftOf="@id/btn3"
+        app:layout_constraintTop_toBottomOf="@id/btn5" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:text="*"
+        app:layout_constraintLeft_toRightOf="@id/btn6"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDivide" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:text="8"
+        app:layout_constraintLeft_toRightOf="@id/btn7"
+        app:layout_constraintRight_toLeftOf="@id/btn9"
+        app:layout_constraintTop_toBottomOf="@id/tvDisplay" />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:background="#E0E0E0"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361" />
+
+    <Button
+        android:id="@+id/btnSubtract"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:text="-"
+        app:layout_constraintLeft_toRightOf="@id/btn3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMultiply" />
+
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:text="/"
+        app:layout_constraintLeft_toRightOf="@id/btn9"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDisplay" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:text="3"
+        app:layout_constraintLeft_toRightOf="@id/btn2"
+        app:layout_constraintRight_toLeftOf="@id/btnSubtract"
+        app:layout_constraintTop_toBottomOf="@id/btn6" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="20dp"
+        android:text="+"
+        app:layout_constraintLeft_toRightOf="@id/btnEquals"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSubtract" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:text="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn2"
+        app:layout_constraintTop_toBottomOf="@id/btn4" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="20dp"
+        android:text="C"
+        app:layout_constraintLeft_toRightOf="@id/btn0"
+        app:layout_constraintRight_toLeftOf="@id/btnEquals"
+        app:layout_constraintTop_toBottomOf="@id/btn2" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnClear"
+        app:layout_constraintTop_toBottomOf="@id/btn1" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:text="7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn8"
+        app:layout_constraintTop_toBottomOf="@id/tvDisplay" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:text="4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn5"
+        app:layout_constraintTop_toBottomOf="@id/btn7" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:text="6"
+        app:layout_constraintLeft_toRightOf="@id/btn5"
+        app:layout_constraintRight_toLeftOf="@id/btnMultiply"
+        app:layout_constraintTop_toBottomOf="@id/btn9" />
+
+    <!-- Multiply Button (*) -->
+
+    <!-- Button 1 -->
+
+    <!-- Button 2 -->
+
+    <!-- Button 3 -->
+
+    <!-- Subtract Button (-) -->
+
+    <!-- Button 0 -->
+
+    <!-- Clear Button (C) -->
+
+    <!-- Equals Button (=) -->
+
+    <!-- Add Button (+) -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
